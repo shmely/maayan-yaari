@@ -1,0 +1,36 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  );
+  gap: 1rem;
+  padding: 0; /* No padding on sides to avoid gaps before first/after last column */
+  width: 100%;
+
+  background-color: --var(--color-secondary);
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Exactly 3 equal columns */
+    max-width: 100%; /* Use full container width */
+  }
+}
+
+/* For medium screens - 2 columns */
+@media (max-width: 767px) and (min-width: 400px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For small screens - 1 column */
+@media (max-width: 399px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
