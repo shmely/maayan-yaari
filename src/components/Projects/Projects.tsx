@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "./projects.css";
 import Project from "../Project/project";
 import type { ProjectProps } from "../Project/project";
 
