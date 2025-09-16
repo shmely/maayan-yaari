@@ -75,3 +75,112 @@
 .error {
   color: #e74c3c;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-details {
+    width: 90%;
+    padding: 50px 20px;
+  }
+
+  .project-header h1 {
+    font-size: 3rem;
+  }
+
+  .project-description {
+    width: 70%;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    width: 100%;
+    padding: 40px 16px;
+  }
+
+  .back-button {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-header {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-description {
+    width: 90%;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details {
+    width: 100%;
+    padding: 30px 12px;
+  }
+
+  .back-button {
+    font-size: 0.85rem;
+    gap: 1px;
+  }
+
+  .back-button:hover {
+    gap: 6px;
+  }
+
+  .project-header {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  .project-description p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .loading,
+  .error {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .project-details {
+    padding: 20px 8px;
+    width: 100%;
+  }
+
+  .project-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .project-description p {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+}
