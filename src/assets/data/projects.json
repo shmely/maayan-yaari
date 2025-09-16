@@ -7,10 +7,54 @@
       "type": "private",
       "description": "דירת יוקרה מעוצבת בלב תל אביב עם גישה מודרנית ונקייה. השימוש בחומרים איכותיים ופלטת צבעים חמה יוצרים אווירה מזמינה ויוקרתית.",
       "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
+        {
+          "img": "/assets/images/projects/oven.jpg",
+          "title": ",תנור",
+          "rows": 6,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "סלון",
+          "rows": 3,
+          "cols": 4
+        },
+        {
+          "img": "/assets/images/projects/hero.jpg",
+          "title": "סלון 2",
+          "rows": 3,
+          "cols": 4
+        },
+        {
+          "img": "/assets/images/projects/stairs.jpg",
+          "title": "סלון 2",
+          "rows": 4,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/stairs.jpg",
+          "title": "סלון 2",
+          "rows": 2,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/stairs.jpg",
+          "title": "סלון 2",
+          "rows": 2,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/stairs.jpg",
+          "title": "סלון 2",
+          "rows": 2,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/stairs.jpg",
+          "title": "סלון 2",
+          "rows": 2,
+          "cols": 2
+        }
       ]
     },
     {
@@ -20,11 +64,36 @@
       "type": "private",
       "description": "בית פרטי מרווח בהרצליה עם עיצוב אלגנטי המשלב קלאסי ומודרני. חללים פתוחים ותאורה טבעית יוצרים תחושת רחב ונוחות.",
       "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "סלון גדול",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "פינת אוכל",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "מטבח פתוח",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "גינה",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero.jpg",
+          "title": "חדר עבודה",
+          "rows": 2,
+          "cols": 1
+        }
       ]
     },
     {
@@ -34,361 +103,24 @@
       "type": "private",
       "description": "פנטהאוז יוקרתי ברמת גן עם גינת גג מעוצבת. עיצוב מינימליסטי עם דגש על חומרים טבעיים ופתרונות אחסון חכמים.",
       "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "d4e5f6g7-h8i9-0123-defg-456789012345",
-      "title": "דירת גן בכפר סבא",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "דירת גן מקסימה בכפר סבא עם חצר פרטית. עיצוב חם ומזמין עם דגש על חיבור לטבע ויצירת זרימה בין הפנים לחוץ.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "e5f6g7h8-i9j0-1234-efgh-567890123456",
-      "title": "וילה במושב",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "וילה כפרית במושב עם אווירה רומנטית. שילוב של עיצוב מסורתי עם טכנולוגיות מתקדמות ופתרונות אקולוגיים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "f6g7h8i9-j0k1-2345-fghi-678901234567",
-      "title": "דירה ברמת אביב",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "דירה מעוצבת ברמת אביב עם אופי צעיר ודינמי. שימוש בצבעים נועזים וחומרים מעניינים ליצירת מרחב ייחודי ומותאם אישית.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "g7h8i9j0-k1l2-3456-ghij-789012345678",
-      "title": "בית זוגי ברעננה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "בית זוגי אינטימי ברעננה עם עיצוב רגוע ונעים. דגש על יצירת פינות נוחות ופרטיות תוך שמירה על תחושת מרחב.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "h8i9j0k1-l2m3-4567-hijk-890123456789",
-      "title": "דירת 4 חדרים בגבעתיים",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "דירת משפחה מרווחת בגבעתיים עם פתרונות אחסון יצירתיים. עיצוב פונקציונלי המתאים לחיי משפחה עם דגש על בטיחות ונוחות.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "i9j0k1l2-m3n4-5678-ijkl-901234567890",
-      "title": "מגורים יוקרתיים בהוד השרון",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "מגורים יוקרתיים בהוד השרון עם סטנדרט גימור גבוה. שילוב של קלאסיקה ומודרניות ליצירת בית מפואר ומזמין.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "j0k1l2m3-n4o5-6789-jklm-012345678901",
-      "title": "דירת חלומות בפתח תקווה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "private",
-      "description": "דירת חלומות בפתח תקווה עם עיצוב מותאם אישית. כל פרט תוכנן במיוחד ליצירת בית שמשקף את האישיות והטעם של הדיירים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "k1l2m3n4-o5p6-7890-klmn-123456789012",
-      "title": "פרויקט דירה חדשה בתל אביב",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "פרויקט מעוצב מקצה לקצה בדירה חדשה בתל אביב. שלב התכנון וההקמה עם דגש על פתרונות חדשניים ומותאמים לדירות קטנות.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "l2m3n4o5-p6q7-8901-lmno-234567890123",
-      "title": "שיפוץ כללי בבת ים",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "שיפוץ כללי ועיצוב מחדש לדירה בבת ים. התמקדות בחידוש המרחב תוך שמירה על אופי הבית המקורי.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "m3n4o5p6-q7r8-9012-mnop-345678901234",
-      "title": "בנייה חדשה בראשון לציון",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "ליווי פרויקט בנייה חדשה בראשון לציון משלב התכנון הראשוני. יצירת בית משפחה מודרני ופונקציונלי.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "n4o5p6q7-r8s9-0123-nopq-456789012345",
-      "title": "שיפוץ קומפלט בחולון",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "שיפוץ מקיף לדירה בחולון כולל שינוי חלוקה וחידוש כל המערכות. יצירת מרחב חדש לחלוטין עם גישה מעוצבת.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "o5p6q7r8-s9t0-1234-opqr-567890123456",
-      "title": "פרויקט תמ\"א 38 בגבעתיים",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "ליווי פרויקט תמ\"א 38 בגבעתיים עם התמחות בעיצוב דירות חדשות במבנה מחודש. שילוב של יעילות ואסתטיקה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "p6q7r8s9-t0u1-2345-pqrs-678901234567",
-      "title": "שיפוץ דירה בעיר העתיקה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "שיפוץ רגיש לדירה בעיר העתיקה תוך שמירה על אופי היסטורי. שילוב של עיצוב מודרני עם אלמנטים מסורתיים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "q7r8s9t0-u1v2-3456-qrst-789012345678",
-      "title": "בנייה ירוקה בהרצליה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "פרויקט בנייה ירוקה בהרצליה עם דגש על קיימות ויעילות אנרגטית. שימוש בחומרים ידידותיים לסביבה וטכנולוגיות מתקדמות.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "r8s9t0u1-v2w3-4567-rstu-890123456789",
-      "title": "פרויקט חדשנות בפתח תקווה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "פרויקט חדשני בפתח תקווה המשלב טכנולוגיות בית חכם עם עיצוב מתקדם. יצירת חוויית מגורים עתידנית ונוחה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "s9t0u1v2-w3x4-5678-stuv-901234567890",
-      "title": "שיפוץ בית ישן בנתניה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "שיקום ושיפוץ בית ישן בנתניה תוך שמירה על קסם המקורי. הנפשת המבנה ויצירת פונקציונליות מודרנית.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "t0u1v2w3-x4y5-6789-tuvw-012345678901",
-      "title": "מתחם מגורים חדש בבאר שבע",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "in-progress",
-      "description": "ליווי עיצוב מתחם מגורים חדש בבאר שבע. תכנון מרחבים קהילתיים ודירות מגוונות התואמות לאקלים המדברי.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "u1v2w3x4-y5z6-7890-uvwx-123456789012",
-      "title": "משרדי הייטק בתל אביב",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב משרדי הייטק מתקדמים בתל אביב. יצירת סביבת עבודה יצירתית ומעוררת השראה עם אזורי עבודה גמישים ומתקדמים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "v2w3x4y5-z6a7-8901-vwxy-234567890123",
-      "title": "מרכז עסקים בהרצליה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב מרכז עסקים יוקרתי בהרצליה עם דגש על יצירת רושם ראשוני מרשים. שילוב של פונקציונליות ויוקרה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "w3x4y5z6-a7b8-9012-wxyz-345678901234",
-      "title": "חנות בוטיק ברחוב שינקין",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב חנות בוטיק ייחודית ברחוב שינקין. יצירת חוויית קנייה מותאמת אישית עם דגש על תצוגה אמנותית של המוצרים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "x4y5z6a7-b8c9-0123-xyza-456789012345",
-      "title": "מסעדה באזור התעשייה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב מסעדה מודרנית באזור התעשייה עם אווירה חמה ומזמינה. שילוב של עיצוב תעשייתי עם נגיעות ביתיות.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "y5z6a7b8-c9d0-1234-yzab-567890123456",
-      "title": "קליניקה רפואית בפתח תקווה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב קליניקה רפואית בפתח תקווה עם דגש על יצירת אווירה רגועה ומרגיעה. שימוש בצבעים רכים ותאורה טבעית.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "z6a7b8c9-d0e1-2345-zabc-678901234567",
-      "title": "סטודיו יוגה ברמת גן",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב סטודיו יוגה שקט ומרגיע ברמת גן. יצירת מרחב רוחני עם חומרים טבעיים ותאורה רכה המעודדת מדיטציה ורגיעה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "a7b8c9d0-e1f2-3456-abcd-789012345678",
-      "title": "משרד עורכי דין בגבעתיים",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב משרד עורכי דין מכובד בגבעתיים. שילוב של קלאסיקה ומודרניות ליצירת אווירה מקצועית ומהימנה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "b8c9d0e1-f2g3-4567-bcde-890123456789",
-      "title": "חנות אופנה במרכז הקניות",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב חנות אופנה עכשווית במרכז קניות. יצירת מרחב קנייה אטרקטיבי עם תצוגה דינמית ופתרונות תאורה מתקדמים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "c9d0e1f2-g3h4-5678-cdef-901234567890",
-      "title": "קפה בית ברמת אביב",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב בית קפה ביתי ברמת אביב עם אווירה חמה ומזמינה. שילוב של רהיטים וינטג' עם פרטים מודרניים.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
-      ]
-    },
-    {
-      "id": "d0e1f2g3-h4i5-6789-defg-012345678901",
-      "title": "חברת סטארט-אפ בטכנולוגיה",
-      "img": "/assets/images/projects/hero.jpg",
-      "type": "business",
-      "description": "עיצוב משרדי סטארט-אפ טכנולוגי עם גישה חדשנית. יצירת סביבת עבודה גמישה ויצירתית המעודדת חדשנות ושיתוף פעולה.",
-      "images": [
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg",
-        "/assets/images/projects/hero.jpg"
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "סלון מרכזי",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "גינת גג",
+          "rows": 1,
+          "cols": 2
+        },
+        {
+          "img": "/assets/images/projects/hero-wide.jpg",
+          "title": "מטבח יוקרתי",
+          "rows": 1,
+          "cols": 2
+        }
       ]
     }
   ]

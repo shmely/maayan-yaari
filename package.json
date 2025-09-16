@@ -9,7 +9,13 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "react": "^19.1.1",
+    "@babel/runtime": "^7.28.4",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
+	"@mui/icons-material" : "^7.3.2",
+	"react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^6.30.1"
   },

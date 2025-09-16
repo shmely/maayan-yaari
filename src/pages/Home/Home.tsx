@@ -2,20 +2,34 @@ import "./home.css";
 import heroImage from "../../assets/img/hero.jpg";
 import profileImage from "../../assets/img/profile.jpg";
 import whatsappIcon from "../../assets/img/whatsapp-svgrepo-com.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Projects from "../../components/Projects/Projects";
 import projectsArray from "../../assets/data/projects.json";
 import type { ProjectProps } from "../../components/Project/project";
+import { useSearchParams } from "react-router-dom";
 
 const Home = () => {
-  const projectList =
-    projectsArray.projects as ProjectProps[];
+  const [searchParams, setSearchParams] =
+    useSearchParams();
+  const tabFromUrl =
+    searchParams.get("tab") || "private";
   const [
     activeProjectType,
     setActiveProjectType,
-  ] = useState("private");
+  ] = useState(tabFromUrl);
+
+  const projectList =
+    projectsArray.projects as ProjectProps[];
+  useEffect(() => {
+    setActiveProjectType(tabFromUrl);
+  }, [tabFromUrl]);
+
+  const handleTabChange = (tabType: string) => {
+    setActiveProjectType(tabType);
+    setSearchParams({ tab: tabType });
+  };
   return (
-    <main>
+    <main className="home">
       <section
         className="hero"
         style={
@@ -121,7 +135,7 @@ const Home = () => {
                 : ""
             }`}
             onClick={() =>
-              setActiveProjectType("private")
+              handleTabChange("private")
             }
           >
             פרטי
@@ -133,7 +147,7 @@ const Home = () => {
                 : ""
             }`}
             onClick={() =>
-              setActiveProjectType("in-progress")
+              handleTabChange("in-progress")
             }
           >
             בבניה
@@ -145,7 +159,7 @@ const Home = () => {
                 : ""
             }`}
             onClick={() =>
-              setActiveProjectType("business")
+              handleTabChange("business")
             }
           >
             עסקי

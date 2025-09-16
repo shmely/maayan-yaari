@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import type { ProjectProps } from "../../components/Project/project";
 import projectsData from "../../assets/data/projects.json";
 import "./projectdetails.css";
+import Gallery from "../../components/Gallery/Gallery";
+import NavigateNextOutlinedIcon from "@mui/icons-material/NavigateNextOutlined";
 
 const ProjectDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -35,7 +37,13 @@ const ProjectDetails = () => {
           onClick={() => navigate(-1)}
           aria-label="חזור אחורה"
         >
-          ← חזור
+          <NavigateNextOutlinedIcon
+            sx={{
+              fontSize: 30,
+              color: "#465140",
+            }}
+          />
+          <span>לכל הפרויקטים</span>
         </button>
         <div className="error">
           פרויקט לא נמצא
@@ -50,7 +58,13 @@ const ProjectDetails = () => {
         onClick={() => navigate(-1)}
         aria-label="חזור אחורה"
       >
-        ← חזור
+        <NavigateNextOutlinedIcon
+          sx={{
+            fontSize: 30,
+            color: "#465140",
+          }}
+        />
+        <span>לכל הפרויקטים</span>
       </button>
 
       <div className="project-header">
@@ -64,22 +78,8 @@ const ProjectDetails = () => {
       </div>
 
       <div className="project-gallery">
-        <h2>גלריית תמונות</h2>
         <div className="gallery-grid">
-          {project.images.map((image, index) => (
-            <div
-              key={index}
-              className="gallery-item"
-            >
-              <img
-                src={image}
-                alt={`${project.title} - תמונה ${
-                  index + 1
-                }`}
-                loading="lazy"
-              />
-            </div>
-          ))}
+          <Gallery images={project.images} />
         </div>
       </div>
     </main>

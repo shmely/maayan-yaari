@@ -7,7 +7,14 @@ export interface ProjectProps {
   img: string;
   type: string;
   description: string;
-  images: string[]; // Array of gallery images
+  images: Image[]; // Array of gallery images
+}
+
+interface Image {
+  img: string;
+  title: string;
+  rows: number;
+  cols: number;
 }
 const Project = ({
   id,
@@ -18,7 +25,7 @@ const Project = ({
   images: _images,
 }: ProjectProps) => {
   const navigate = useNavigate();
-  
+
   const handleClick = () => {
     navigate(`/project/${id}`);
   };
