@@ -77,10 +77,8 @@ const ProjectDetails = () => {
         <p>{project.description}</p>
       </div>
 
-      <div className="project-gallery">
-        <div className="gallery-grid">
-          <Gallery images={project.images} />
-        </div>
+      <div className="gallery-grid">
+        <Gallery images={project.images} />
       </div>
     </main>
   );

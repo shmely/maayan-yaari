@@ -1,3 +1,7 @@
+.gallery-grid {
+  width: 100%;
+  margin-top: 2rem;
+}
 .project-details {
   width: 80%;
   margin: 0 auto;
@@ -78,6 +82,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .gallery-grid {
+  width: 1000px;
+  margin-top: 2rem;
+}
   .project-details {
     width: 90%;
     padding: 50px 20px;
@@ -98,6 +106,10 @@
 }
 
 @media (max-width: 768px) {
+    .gallery-grid {
+  width: 750px;
+  margin-top: 2rem;
+}
   .project-details {
     width: 100%;
     padding: 40px 16px;
@@ -129,6 +141,11 @@
 }
 
 @media (max-width: 480px) {
+  @media (max-width: 768px) {
+    .gallery-grid {
+  width: 460px;
+  margin-top: 2rem;
+}
   .project-details {
     width: 100%;
     padding: 30px 12px;
@@ -170,6 +187,10 @@
 }
 
 @media (max-width: 320px) {
+ .gallery-grid {
+  width:300px;
+  margin-top: 2rem;
+}
   .project-details {
     padding: 20px 8px;
     width: 100%;
