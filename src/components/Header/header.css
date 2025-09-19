@@ -7,7 +7,7 @@ header {
   position: relative;
 }
 
-nav {
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,13 +25,44 @@ nav {
 
 .nav-links a:hover,
 .mobile-nav a:hover {
-  color: var(--accent-color);
+  color: #fbfbff80;
 }
 
 .logo {
   height: 80px;
   margin: 0;
   z-index: 1001;
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: brightness(0) saturate(100%) invert(98%)
+    sepia(8%) saturate(295%) hue-rotate(200deg)
+    brightness(104%) contrast(100%) opacity(0.5);
+}
+
+/* Alternative approach using CSS masks if you have transparency */
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbff80;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.logo-container:hover::after {
+  opacity: 1;
 }
 
 .icon {
@@ -114,15 +145,15 @@ nav {
   nav {
     width: 90%;
   }
-  
+
   .desktop-nav {
     display: none;
   }
-  
+
   .hamburger-menu {
     display: flex;
   }
-  
+
   .mobile-nav {
     display: flex;
   }
@@ -132,7 +163,7 @@ nav {
   .logo {
     height: 60px;
   }
-  
+
   .mobile-nav a {
     font-size: 1.3rem;
   }

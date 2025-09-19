@@ -7,6 +7,7 @@ import Projects from "../../components/Projects/Projects";
 import projectsArray from "../../assets/data/projects.json";
 import type { ProjectProps } from "../../components/Project/project";
 import { useSearchParams } from "react-router-dom";
+import { Stage } from "../../components/Stage/stage";
 
 const Home = () => {
   const [searchParams, setSearchParams] =
@@ -171,6 +172,43 @@ const Home = () => {
               project.type === activeProjectType
           )}
         />
+      </section>
+      <section className="do-it">
+        <h3 className="do-it-text">
+          עכשיו
+          <span className="bold-white-text">
+            {" "}
+            פתחו עיניים{" "}
+          </span>
+          ותחשבו שכל זה יכול להיות המציאות החדשה
+          שלכם.
+          <br />
+          פשוט
+          <span className="bold-white-text">
+            {" "}
+            תרימו טלפון{" "}
+          </span>
+          לקביעת פגישה איתי.
+          <br />
+          זכרו,
+          <span className="bold-white-text">
+            {" "}
+            שינוי גדול,
+          </span>
+          מתחיל תמיד
+          <span className="bold-white-text">
+            {" "}
+            מהדברים הקטנים.
+          </span>
+        </h3>
+      </section>
+      <section className="process-stages">
+        <h3 className="process-stages-title">
+          תהליך העבודה - בית ב-8 שלבים
+        </h3>
+        <div className="stages">
+          <Stage />
+        </div>
       </section>
     </main>
   );

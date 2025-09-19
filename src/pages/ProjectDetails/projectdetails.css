@@ -76,6 +76,13 @@
   color: var(--text-color);
 }
 
+do-it {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: var(--text-color);
+}
+
 .error {
   color: #e74c3c;
 }

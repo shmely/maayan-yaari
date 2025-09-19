@@ -4,7 +4,8 @@ import logoWhite from "../../assets/img/logo-white.png";
 import whatsappIcon from "../../assets/img/whatsapp-svgrepo-com.svg";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] =
+    useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,13 +13,15 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        <img
-          src={logoWhite}
-          alt="Logo"
-          className="logo"
-        />
-        
+      <nav className="header-nav">
+        <a href="/" className="logo-container">          
+          <img
+            src={logoWhite}
+            alt="Logo"
+            className="logo"
+          />
+        </a>
+
         {/* Desktop Navigation */}
         <div className="nav-links desktop-nav">
           <a href="/">קצת עליי</a>
@@ -40,29 +43,60 @@ const Header = () => {
         </div>
 
         {/* Hamburger Menu Button */}
-        <button 
-          className="hamburger-menu" 
+        <button
+          className="hamburger-menu"
           onClick={toggleMenu}
           aria-label="תפריט"
           aria-expanded={isMenuOpen}
         >
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span
+            className={`hamburger-line ${
+              isMenuOpen ? "open" : ""
+            }`}
+          ></span>
+          <span
+            className={`hamburger-line ${
+              isMenuOpen ? "open" : ""
+            }`}
+          ></span>
+          <span
+            className={`hamburger-line ${
+              isMenuOpen ? "open" : ""
+            }`}
+          ></span>
         </button>
 
         {/* Mobile Navigation Menu */}
-        <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
-          <a href="/" onClick={toggleMenu}>קצת עליי</a>
-          <a href="/" onClick={toggleMenu}>פרויקטים</a>
-          <a href="/" onClick={toggleMenu}>תהליך העבודה</a>
-          <a href="/" onClick={toggleMenu}>לקוחות ממליצים</a>
-          <a href="/" onClick={toggleMenu}>פודקאסט</a>
-          <a href="/" onClick={toggleMenu}>צרו קשר</a>
-          <a href="tel:+972523468470" onClick={toggleMenu}>
+        <div
+          className={`mobile-nav ${
+            isMenuOpen ? "open" : ""
+          }`}
+        >
+          <a href="/" onClick={toggleMenu}>
+            קצת עליי
+          </a>
+          <a href="/" onClick={toggleMenu}>
+            פרויקטים
+          </a>
+          <a href="/" onClick={toggleMenu}>
+            תהליך העבודה
+          </a>
+          <a href="/" onClick={toggleMenu}>
+            לקוחות ממליצים
+          </a>
+          <a href="/" onClick={toggleMenu}>
+            פודקאסט
+          </a>
+          <a href="/" onClick={toggleMenu}>
+            צרו קשר
+          </a>
+          <a
+            href="tel:+972523468470"
+            onClick={toggleMenu}
+          >
             052-3468470
           </a>
-          <a 
+          <a
             href="https://api.whatsapp.com/send?phone=972523468470&;text=היי מעיין"
             onClick={toggleMenu}
           >
