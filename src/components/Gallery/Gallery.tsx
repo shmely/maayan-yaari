@@ -1,5 +1,7 @@
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface Image {
   img: string;
@@ -28,28 +30,69 @@ function srcset(
   };
 }
 
-export default function Gallery({ images }: GalleryProps) {
+export default function Gallery({
+  images,
+}: GalleryProps) {
+  const theme = useTheme();
+  const isXs = useMediaQuery(
+    theme.breakpoints.up("xs")
+  );
+  const isSm = useMediaQuery(
+    theme.breakpoints.up("sm")
+  );
+  const isMd = useMediaQuery(
+    theme.breakpoints.up("md")
+  );
+  const isLg = useMediaQuery(
+    theme.breakpoints.up("lg")
+  );
+  const isXl = useMediaQuery(
+    theme.breakpoints.up("xl")
+  );
+  let height = 121;
+  let columns = 1;
+  if (isXl) {
+    columns = 6;
+    height = 120;
+  } else if (isLg) {
+    columns = 6;
+    height = 150;
+  } else if (isMd) {
+    columns = 2;
+    height = 180;
+  } else if (isSm) {
+    columns = 1;
+  } else {
+    height = 220;
+    columns = 1; // For xs
+  }
+
+  console.log("Columns:", columns);
   return (
     <>
       {images && images.length > 0 ? (
         <ImageList
-          sx={{ width: "100%", height: "100%" }}
           variant="quilted"
-          cols={6}
-          rowHeight={121}
+          rowHeight={height}
           gap={16}
-          
+          cols={columns}
+          sx={{
+            width: "100%",
+            height: "100%",
+          }}
         >
           {images.map((item) => (
             <ImageListItem
               key={item.img}
-              cols={item.cols || 1}
+              cols={
+                Math.min(item.cols, columns) || 1
+              }
               rows={item.rows || 1}
             >
               <img
                 {...srcset(
                   item.img,
-                  121,
+                  height,
                   item.rows,
                   item.cols
                 )}
