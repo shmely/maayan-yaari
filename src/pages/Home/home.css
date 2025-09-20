@@ -194,10 +194,16 @@
   font-size: 2.625rem;
   font-weight: var(--font-semibold);
   color: var(--color-primary-dark);
+  margin-block-end: 2.625rem;
 }
 
 .stages {
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }
 
 /* Responsive Design */

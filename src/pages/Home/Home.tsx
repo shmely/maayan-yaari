@@ -7,7 +7,8 @@ import Projects from "../../components/Projects/Projects";
 import projectsArray from "../../assets/data/projects.json";
 import type { ProjectProps } from "../../components/Project/project";
 import { useSearchParams } from "react-router-dom";
-import { Stage } from "../../components/Stage/stage";
+import { Stage } from "../../components/Stage/Stage";
+import stages from "../../assets/data/stages.json";
 
 const Home = () => {
   const [searchParams, setSearchParams] =
@@ -207,7 +208,15 @@ const Home = () => {
           תהליך העבודה - בית ב-8 שלבים
         </h3>
         <div className="stages">
-          <Stage />
+          {stages.stages.map((stage) => (
+            <Stage
+              key={stage.id}
+              id={stage.id}
+              title={stage.title}
+              description={stage.description}
+              icon={stage.icon}
+            />
+          ))}
         </div>
       </section>
     </main>
