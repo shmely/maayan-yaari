@@ -5,10 +5,15 @@ import whatsappIcon from "../../assets/img/whatsapp-svgrepo-com.svg";
 import { useEffect, useState } from "react";
 import Projects from "../../components/Projects/Projects";
 import projectsArray from "../../assets/data/projects.json";
+import recommens from "../../assets/data/recomeds.json";
 import type { ProjectProps } from "../../components/Project/project";
 import { useSearchParams } from "react-router-dom";
 import { Stage } from "../../components/Stage/Stage";
 import stages from "../../assets/data/stages.json";
+import recomend from "../../assets/img/recomend.jpg";
+import Icon from "@mui/material/Icon";
+import FormatQuoteOutlinedIcon from "@mui/icons-material/FormatQuoteOutlined";
+import { Carousel } from "../../components/Carousel/Carousel";
 
 const Home = () => {
   const [searchParams, setSearchParams] =
@@ -47,7 +52,7 @@ const Home = () => {
           מעין יערי - עיצוב פנים והום סטיילינג
         </h2>
       </section>
-      <section className="intro">
+      <section id="about me" className="intro">
         <article className="about-me">
           <h1 className="about-me-title">
             קצת עליי
@@ -107,7 +112,7 @@ const Home = () => {
           />
         </a>
       </section>
-      <section className="projects">
+      <section id="projects" className="projects">
         <header>
           <h2>פרויקטים אחרונים</h2>
           <p>
@@ -203,20 +208,50 @@ const Home = () => {
           </span>
         </h3>
       </section>
-      <section className="process-stages">
+      <section id="the process" className="process-stages">
         <h3 className="process-stages-title">
           תהליך העבודה - בית ב-8 שלבים
         </h3>
         <div className="stages">
-          {stages.stages.map((stage) => (
+          {stages.stages.map((stage, index) => (
             <Stage
               key={stage.id}
               id={stage.id}
               title={stage.title}
               description={stage.description}
               icon={stage.icon}
+              delay={index * 150}
             />
           ))}
+        </div>
+      </section>
+      <section id="clients recommend"
+        className="recommend"
+        style={{
+          display: "block",
+          backgroundColor: "#ffffff00",
+          color: "#5f331a",
+          backgroundImage: `linear-gradient(to bottom, var(--recomend-color), var(--recomend-color)), url(${recomend})`,
+          backgroundAttachment: "scroll, fixed",
+          backgroundPosition: "0px 50%",
+          backgroundSize: "auto, cover",
+          backgroundRepeat: "repeat,no-repeat",
+          paddingBottom: "50px",
+        }}
+      >
+        <div className="recommend-content"></div>
+        <h2 className="recommend-title">
+          לקוחות ממליצים
+        </h2>
+        <div className="slides-container">
+          <Icon
+            component={FormatQuoteOutlinedIcon}
+            sx={{
+              fontSize: "120px",
+              color: "white",
+            }}
+          />
+          <Carousel data={recommens.slides} />
         </div>
       </section>
     </main>

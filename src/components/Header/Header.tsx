@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header>
       <nav className="header-nav">
-        <a href="/" className="logo-container">          
+        <a href="/" className="logo-container">
           <img
             src={logoWhite}
             alt="Logo"
@@ -24,10 +24,12 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <div className="nav-links desktop-nav">
-          <a href="/">קצת עליי</a>
-          <a href="/">פרויקטים</a>
-          <a href="/">תהליך העבודה</a>
-          <a href="/">לקוחות ממליצים</a>
+          <a href="#about me">קצת עליי</a>
+          <a href="#projects">פרויקטים</a>
+          <a href="#the process">תהליך העבודה</a>
+          <a href="#clients recommend">
+            לקוחות ממליצים
+          </a>
           <a href="/">פודקאסט</a>
           <a href="/">צרו קשר</a>
           <a href="tel:+972523468470">

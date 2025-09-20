@@ -34,9 +34,6 @@ export default function Gallery({
   images,
 }: GalleryProps) {
   const theme = useTheme();
-  const isXs = useMediaQuery(
-    theme.breakpoints.up("xs")
-  );
   const isSm = useMediaQuery(
     theme.breakpoints.up("sm")
   );

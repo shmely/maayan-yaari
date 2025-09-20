@@ -8,6 +8,16 @@
   height: 390px;
   width: 320px;
   position: relative;
+   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.stage-hidden {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+}
+
+.stage-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .stage-title-box {
@@ -22,6 +32,8 @@
 
 .stage-title {
   text-align: center;
+  white-space: pre-line;
+  font-family: NotoSansHebrew;
   color: var(--color-primary-dark);
   font-weight: var(--font-semibold);
   font-size: 1.5rem;

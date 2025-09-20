@@ -1,0 +1,24 @@
+{
+  "slides": [   
+    {
+      "type": "text",
+      "value": "מאיה היא מעצבת מוכשרת ומקצועית. היא הקשיבה לצרכים שלי ויצרה עבורי עיצוב מדהים.",
+      "alt": "Carousel Text 1"
+    },    
+    {
+      "type": "video",
+      "value": "https://www.youtube.com/embed/aH39JaNsSjI?si=8UxrC2CgOE26X1xM",
+      "alt": "Carousel Image 2"
+    },
+    {
+      "type": "text",
+      "value": "העבודה עם המעצבת הייתה חוויה מדהימה. היא הבינה את הצרכים שלי והצליחה להפוך את החזון שלי למציאות.",
+      "alt": "Carousel Text 3"
+    },
+    {
+      "type": "video",
+      "value": "https://www.youtube.com/embed/KE6UOBd53y0?si=UCE5GxYRIYdz6B7F",
+      "alt": "Carousel Image 2"
+    }
+  ]
+}
