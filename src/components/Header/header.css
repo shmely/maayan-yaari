@@ -1,4 +1,5 @@
 header {
+  opacity: 1;
   display: flex;
   background: var(--color-primary);
   width: 100%;

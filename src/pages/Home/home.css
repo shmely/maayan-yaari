@@ -198,7 +198,7 @@
 }
 
 .stages {
-  padding: 0 25rem;
+  padding: 0 17.3rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -237,6 +237,11 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1570px) {
+.stages {
+    padding: 0 10rem;
+  }
+}
 
 /* Tablet Design (768px - 1024px) */
 @media (max-width: 1024px) {
@@ -273,6 +278,13 @@
 
   .projects h2 {
     font-size: 2.2rem;
+  }
+  .process-stages {
+    padding: 75px 0;
+  }
+  .stages {
+    padding: 0 0rem;
+    
   }
 }
 
@@ -371,6 +383,12 @@
     font-size: 1rem;
     min-width: 80px;
   }
+  .process-stages {
+    padding: 50px 0;
+  }
+  .stages {
+    padding: 0 5rem;
+  }
 }
 
 /* Small Mobile (480px and below) */
@@ -442,6 +460,12 @@
     padding: 6px 15px;
     font-size: 0.9rem;
   }
+  .process-stages {
+    padding: 20px 0;
+  }
+  .stages {
+    padding: 0 1rem;
+  }
 }
 
 /* Extra Small Mobile (360px and below) */
@@ -469,6 +493,12 @@
 
   .project-button {
     width: 200px;
+  }
+  .process-stages {
+    padding: 10px 0;
+  }
+  .stages {
+    padding: 0 0.8rem;
   }
 }
 /*
